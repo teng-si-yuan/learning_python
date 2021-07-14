@@ -22,3 +22,4 @@
 18. big and small
 19. highest and lowest number
 20. welcome
+21. big and small function

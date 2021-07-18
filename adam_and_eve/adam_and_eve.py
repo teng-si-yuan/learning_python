@@ -3,6 +3,10 @@ class Human:
 		self.name = name
 		self.sex = sex
 
+	def say_hi(self):
+		print("Hello my name is " + self.name)
+
+
 class Man(Human):
 	def __init__(self, name):
 		Human.__init__(self, name, 'male')
@@ -17,5 +21,9 @@ def create_humans():
 	eve = Woman('eve')
 	first_humans.append(adam)
 	first_humans.append(eve)
+	adam.say_hi()
+	eve.say_hi()
 	return(first_humans)
+
+create_humans()
 

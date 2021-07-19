@@ -3,22 +3,20 @@ from highest_and_lowest import highest_and_lowest
 
 class TestHighestAndLowest(unittest.TestCase):
 
-	def test_common_highest_and_lowest1(self):
+	def test_common_numbers_highest_and_lowest(self):
 		self.assertEqual(highest_and_lowest('1 2 3 4 6'), '6 1')
 
-	def test_common_highest_and_lowest2(self):
+	def test_minus_numbers_highest_and_lowest(self):
 		self.assertEqual(highest_and_lowest('-1 1'), '1 -1')
 
-	def test_common_highest_and_lowest3(self):
+	def test_empty_number_highest_and_lowest(self):
 		self.assertEqual(highest_and_lowest(''), '')
 
-	def test_common_highest_and_lowest4(self):
+	def test_same_numbers_highest_and_lowest(self):
 		self.assertEqual(highest_and_lowest('1 1'), '1 1')
 
-	def test_common_highest_and_lowest5(self):
+	def test_only_one_number_highest_and_lowest(self):
 		self.assertEqual(highest_and_lowest('1'), '1 1')
-
-
 
 if __name__ == '__main__':
 	unittest.main()

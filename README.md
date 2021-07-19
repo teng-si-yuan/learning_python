@@ -26,3 +26,4 @@
 22. ball
 23. adam and eve
 24. age of days
+25. highest and lowest

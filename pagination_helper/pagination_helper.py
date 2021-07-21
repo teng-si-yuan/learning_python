@@ -31,10 +31,16 @@ class PaginationHelper:
 		start_index = page_number * self.page_size
 		page_items = []
 		i = 0
+		if page_number < 0:
+			print("page_number < 0")
+			return([])
+		if page_number >= self.page_count():
+			print("page_number == self.page_count()")
+			return([])
 		while i < 4:
 			page_items.append(self.items[start_index + i])
 			i = i + 1
 			if start_index + i == self.item_count():
+				print(i)
 				break
 		return(page_items)
-

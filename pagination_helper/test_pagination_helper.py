@@ -43,7 +43,10 @@ class TestPaginationHelper(unittest.TestCase):
 		helper = PaginationHelper(['a', 'b', 'c', 'd', 'e', 'f'], 4)
 		self.assertEqual(helper.page(0), ['a', 'b', 'c', 'd'])
 		self.assertEqual(helper.page(1), [ 'e', 'f'])
-
+		helper = PaginationHelper(['a', 'b', 'c', 'd', 'e', 'f'], 4)
+		self.assertEqual(helper.page(-1), [])
+		helper = PaginationHelper(['a', 'b', 'c', 'd', 'e', 'f'], 4)
+		self.assertEqual(helper.page(10), [])
 
 if __name__ == '__main__':
 	unittest.main()

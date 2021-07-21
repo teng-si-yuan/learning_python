@@ -26,3 +26,15 @@ class PaginationHelper:
 			return(-1)
 		if item_index < 0:
 			return(-1)
+
+	def page(self, page_number):
+		start_index = page_number * self.page_size
+		page_items = []
+		i = 0
+		while i < 4:
+			page_items.append(self.items[start_index + i])
+			i = i + 1
+			if start_index + i == self.item_count():
+				break
+		return(page_items)
+

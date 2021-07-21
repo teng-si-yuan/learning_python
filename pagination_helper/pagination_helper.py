@@ -5,7 +5,7 @@ class PaginationHelper:
 		self.page_size = page_size
 
 	def page_count(self):
-		return(math.ceil(len(self.items) / 4))
+		return(math.ceil(len(self.items) / self.page_size))
 
 	def item_count(self):
 		return(len(self.items))
@@ -20,7 +20,7 @@ class PaginationHelper:
 
 	def page_index(self, item_index):
 		if item_index < len(self.items):
-			x = item_index / 4
+			x = item_index / self.page_size
 			return(math.floor(x))
 		if item_index >= len(self.items):
 			return(-1)

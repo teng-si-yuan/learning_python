@@ -28,3 +28,4 @@
 24. age of days
 25. highest and lowest
 26. pagination helper
+27. format

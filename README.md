@@ -29,3 +29,4 @@
 25. highest and lowest
 26. pagination helper
 27. format
+28. sort

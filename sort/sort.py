@@ -1,4 +1,4 @@
-def highest_number(number_array):
+def lowest_number(number_array):
 	z = 100000000
 	if len(number_array) == 0:
 		return([])
@@ -11,14 +11,10 @@ def highest_number(number_array):
 
 def sort(unordered_array):
 	result = []
-	if len(unordered_array) == 0:
-		return([])
-	if len(unordered_array) == 1:
-		return([unordered_array[0]])
+	if len(unordered_array) == 0 or len(unordered_array) == 1:
+		return(unordered_array)
 	while len(unordered_array) >= 1:
-		x = highest_number(unordered_array)
+		x = lowest_number(unordered_array)
 		result.append(x)
 		unordered_array.remove(x)
-		if len(unordered_array) == 0:
-			break
 	return(result)

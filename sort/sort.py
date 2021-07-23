@@ -8,7 +8,6 @@ def lowest_number(number_array):
 		if z > x:
 			z = x
 	return(z)
-
 def sort(unordered_array):
 	result = []
 	if len(unordered_array) == 0 or len(unordered_array) == 1:

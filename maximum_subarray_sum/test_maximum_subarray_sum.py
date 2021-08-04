@@ -15,8 +15,11 @@ class TestMaximumSubarraySum(unittest.TestCase):
 	def test_negative_number_maximum_subarray_sum(self):
 		self.assertEqual(maximum_subarray_sum([-1, -2, -3, -4]), (0, []))
 
+	def test_both_positive_negative_number_maximum_subarray_sum(self):
+		self.assertEqual(maximum_subarray_sum([4, -1, 2, -3]), (5, [4, -1, 2]))
+
 	# def test_both_positive_negative_number_maximum_subarray_sum(self):
-	# 	self.assertEqual(maximum_subarray_sum([-1, 2, -3, 4]), (10, [1, 2, 3, 4]))
+	# 	self.assertEqual(maximum_subarray_sum([-1, 2, -3, 4]), (4, [4]))
 
 if __name__ == '__main__':
 	unittest.main()

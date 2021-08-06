@@ -8,7 +8,7 @@ def maximum_subarray_sum(integer_array):
 	if is_all_positive(integer_array) == True:
 		return(array_sum(integer_array), integer_array)
 	if is_all_negative(integer_array) == False:
-		return(array_sum(find_the_biggest_subarray_from_0(integer_array)), find_the_biggest_subarray_from_0(integer_array))
+		return(array_sum(find_the_biggest_subarray(integer_array)),find_the_biggest_subarray(integer_array))
 
 def is_all_negative(number_array):
 	for x in number_array:
@@ -35,7 +35,7 @@ def sub_array(integer_array, start_index, last_index):
 		start_index = start_index + 1
 	return(result)
 
-def find_the_biggest_subarray_from_0(integer_array):
+def find_the_biggest_subarray(integer_array):
 	y = 0
 	i = 0
 	start_index = 0

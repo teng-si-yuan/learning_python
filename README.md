@@ -30,3 +30,5 @@
 26. pagination helper
 27. format
 28. sort
+29. maximum subarray sum
+30. scraping codewars top users

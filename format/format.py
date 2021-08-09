@@ -3,7 +3,7 @@ class HTMLFormat:
 		pass
 
 	def div(self, text):
-		return('<div>') + text + ('</div')
+		return('<div>') + text + ('</div>')
 
 	def p(self, text):
 		return('<p>') + text + ('</p>')

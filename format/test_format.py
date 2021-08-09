@@ -5,7 +5,7 @@ class TestFormat(unittest.TestCase):
 
 	def test_div(self):
 		format = HTMLFormat()
-		self.assertEqual(format.div('foo'), '<div>foo</div')
+		self.assertEqual(format.div('foo'), '<div>foo</div>')
 
 	def test_p(self):
 		format = HTMLFormat()

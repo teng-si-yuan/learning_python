@@ -32,3 +32,9 @@
 28. sort
 29. maximum subarray sum
 30. scraping codewars top users
+
+
+## Note to install BeautifulSoup on Windows
+
+I got "ModuleNotFoundError:no module named 'bs4' windows", and successfully installed and imported BeautifulSoup by following the instruction on the link below.
+https://stackoverflow.com/questions/33331850/importerror-no-module-named-bs4-in-windows

@@ -1,5 +1,6 @@
 import urllib.request
 from bs4 import BeautifulSoup
+from user import User
 class LeaderBoard:
 	def __init__(self):
 		self.position = []
@@ -20,10 +21,11 @@ class LeaderBoard:
 					continue
 				if child.text.count("kyu") == 0 and child.text.count("dan") == 0:
 					clan = child.text
-			print(name)
-			print(rank)
-			print(honor)
-			print(clan)
- 
+			user = User(rank, name, clan, honor)
+			print(user.rank)
+			print(user.name)
+			print(user.clan)
+			print(user.honor)
+
 leader_board = LeaderBoard()
 leader_board.scrape()

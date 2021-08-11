@@ -8,7 +8,12 @@ class LeaderBoard:
 		with urllib.request.urlopen('https://www.codewars.com/users/leaderboard/') as response:
    			html = response.read()
    			soup = BeautifulSoup(html, 'html.parser')
-   			print(soup.prettify())
-
+   			rows = soup.find_all('tr')
+   			# cells = rows[1].children[0].text
+   			print(rows[1].get('data-username'))
+   			print(rows[1])
+   			for child in rows[1].children:
+   				print(child.text)
+ 
 leader_board = LeaderBoard()
 leader_board.scrape()

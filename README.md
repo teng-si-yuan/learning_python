@@ -32,6 +32,7 @@
 28. sort
 29. maximum subarray sum
 30. scraping codewars top users
+31. valid parentheses
 
 
 ## Note to install BeautifulSoup on Windows
